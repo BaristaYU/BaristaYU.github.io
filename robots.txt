@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://baristayu.github.io/sitemap.xml
