@@ -1,27 +1,19 @@
 ---
-title: "첫 글"
+title: "댓글창을 열어보자"
+comments: true
 categories:
-  - Post Formats
+  - Uncategorized
 tags:
-  - Post Formats
-  - readability
-  - standard
+  - comments
+  - test
 ---
 
-### 기념비적인 첫 글
-마크다운 문법은 노션을 한 반년 썼는데도 아직 모른다.
+`provider`가 켜져 있고
+comments: true 상태이면 댓글이 된다 한다.
+왜 안될까?
 
-# 할
-## 줄
-### 아
-#### 는
-##### 문
-###### 법
-은 이렇게 제목만들기와 **강조**밖에 모른다.
+컴공스럽게 코드블럭도 적어보자
 
-- 불릿포인트도 할 줄 아는 것 같다.
-밑줄도 그을 줄 안다.
+    print('Hello, World!')
 
-뭐 많아 보이는데 천천히 배워봐야겠다.
-
-역시 배워야할 것 투성이인 것 같다.
+댓글창 열려라 얍
