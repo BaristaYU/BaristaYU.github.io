@@ -1,6 +1,6 @@
 ---
 title: "댓글창을 열어보자"
-comments: true
+comments: false
 categories:
   - Uncategorized
 tags:
@@ -8,12 +8,14 @@ tags:
   - test
 ---
 
-`provider`가 켜져 있고
-comments: true 상태이면 댓글이 된다 한다.
-왜 안될까?
+`provider`만 켜져있는데
+딱히 뭐 안해도 열리는 것 같다.
+지킬 최고.
+
+comments: false 상태도 한번 해좌.
 
 컴공스럽게 코드블럭도 적어보자
 
     print('Hello, World!')
 
-댓글창 열려라 얍
+댓글창 닫혀라 얍
