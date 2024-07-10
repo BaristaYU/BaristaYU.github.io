@@ -20,7 +20,7 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "In a nutshell,"
 title_separator          : "&#124;"
 subtitle                 : "Complex to simple."
-name                     : "Robert Yongkyun Yu"
+name                     : "baristayu"
 description              : "Complex to simple."
 url                      : "https://BaristaYU.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
