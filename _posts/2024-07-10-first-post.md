@@ -1,4 +1,5 @@
 ---
+permalink: /portfolio/
 title: "댓글창을 열어보자"
 comments: false
 categories:
