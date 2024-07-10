@@ -310,15 +310,19 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: true #읽는데 걸리는 소요시간
+      show_date: true #포스팅 날짜
       comments: true
       share: false
       related: true
 
-  # # _pages  : 새로 추가함.
-  # - scope:
-  #     path: "_pages"
-  #     type: pages
-  #   values:
-  #     layout: single
-  #     author_profile: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: true
+      related: false
