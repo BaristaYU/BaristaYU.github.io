@@ -1,7 +1,6 @@
 ---
-permalink: /portfolio/
 classes: wide
-title: "댓글창을 닫은 와이드화면"
+title: "test1"
 comments: false
 categories:
   - Uncategorized
