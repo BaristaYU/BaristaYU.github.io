@@ -1,5 +1,4 @@
 ---
-permalink: /portfolio/
 classes: wide
 title: "삼성병원 AI강의"
 categories:
