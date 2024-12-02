@@ -2,7 +2,7 @@
 classes: wide
 title: "삼성병원 AI강의"
 categories:
-  - Uncategorized
+  - 잡동사니
 tags:
   - AI
   - deep_learning
@@ -16,7 +16,7 @@ MLP
 Linear Activation
 Gradient decent
 cross entropy (loss):
-  분포 차이를 나타냄
+분포 차이를 나타냄
 one-hot encoding
 다중 분류: 이진분류가 아닌 그 이상의 분류
 각 노드가 각 결과를 담당하도록
@@ -39,18 +39,20 @@ weight는 ai가 알아서 알아내는 것
 4. 2번에서 만든 웨이트 행렬을 **커널 혹은 필터**라고 부름. (bias 포함)
 5. 필터한 결과를 깊이 축(채널 축)으로 쌓은 것을 feature map이라 함
 
-개채 행렬? : 개수 * 채널 * 행 * 열
+개채 행렬? : 개수 _ 채널 _ 행 \* 열
 
 Feature map 간의 weighted sum:
-  커널 사이즈가 1x1일 경우 각 픽셀로 움직이는 것이 곧 그냥 한 피쳐맵에 곱하는것과 같으므로
-  -> one by one cnn
+커널 사이즈가 1x1일 경우 각 픽셀로 움직이는 것이 곧 그냥 한 피쳐맵에 곱하는것과 같으므로
+-> one by one cnn
 
 cnn 필터의 개체행열에서 정해줘야할 하이퍼파라미터는
 개,행,열 : 채널은 정해져있음 (입력의 채널 수)
 
 Padding
+
 1. 사이즈 유지
 2. 가생이 정보
+
 - 구석에 있는 픽셀같은건 자주 필터링되지 않으므로 외각에 0과 같은 더미데이터를 넣음
 
 Stride
@@ -62,5 +64,3 @@ Pooling layer
 
 VGGnet
 flatten
-
-

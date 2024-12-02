@@ -3,9 +3,8 @@ classes: wide
 title: "test1"
 comments: false
 categories:
-  - Uncategorized
+  - 잡동사니
 tags:
-  - comments
   - test
 ---
 
