@@ -118,9 +118,9 @@ author:
   location: "Republic of Korea"
   email: # "yuioo2000@gmail.com"
   links:
-    -  # label: "Email"
-      # icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:yuioo2000@gmail.com"
+    - label: "solved.ac"
+      icon: "fas fa-fw fa-code"
+      url: "https://solved.ac/profile/baristayu"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/BaristaYU"
