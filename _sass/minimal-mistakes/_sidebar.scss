@@ -139,7 +139,7 @@
 
     @include breakpoint($large) {
       padding: 2px; // 5
-      border: 1px solid $border-color;
+      border: 1px solid $border-color; //1
     }
   }
 }
@@ -147,7 +147,7 @@
 .author__content {
   display: table-cell;
   vertical-align: top;
-  padding-inline: 15px 25px;
+  padding-inline: 15px 25px; // 15 25
   line-height: 1;
 
   @include breakpoint($large) {
@@ -166,7 +166,7 @@
   margin: 0;
 
   @include breakpoint($large) {
-    margin-top: 10px;
+    margin-top: 20px; //10
     margin-bottom: 10px;
   }
 }
