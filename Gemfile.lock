@@ -101,6 +101,7 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  jekyll-sitemap
   minimal-mistakes-jekyll
 
 BUNDLED WITH
