@@ -1,8 +1,8 @@
 ---
+classes: wide
 title: "(ENG) Machine Learning - Linear Regression Model Part I"
 categories:
   - Machine learning
-  - Regression algorithm
 tags:
   - AI
   - Andrew Ng
