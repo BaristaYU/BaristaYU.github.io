@@ -6,12 +6,12 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Search"
     url: /search/
-  - title: "Category"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "Portfolio"
     url: /portfolio/
+  - title: "Category"
+    url: /categories/
+  - title: "Tag"
+    url: /tags/
 # sidebar:
 #   - title: "Title"
 #     image: "/assets/images/your-image.jpg"

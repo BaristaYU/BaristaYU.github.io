@@ -7,6 +7,8 @@ tags:
   - AI
   - Andrew Ng
   - Supervised learning
+  - Linear regression model
+  - Cost function
 ---
 
 Hello, my name is Yongkyun Yu.
