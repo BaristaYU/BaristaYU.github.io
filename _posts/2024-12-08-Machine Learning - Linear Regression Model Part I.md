@@ -12,11 +12,8 @@ tags:
 ---
 
 Hello, my name is Yongkyun Yu.
-I'm Korean, and I'm not good at English.
-Therefore, I'm trying to improve my English skills by sharing some data science knowledge in English without translator.
-You'll learn some knowledge, and I'll learn some English skills.
-Quite cool, isn't it?
-Thank you for your understanding, I'll try my best.
+I'm Korean, and I'm not good at English, so I'm trying to improve my English skills by sharing some data science knowledge in English without translator.
+You'll learn some knowledge, and I'll learn some English skills. Quite cool, isn't it? Thank you for your understanding, I'll try my best.
 
 This post was written after attending Professor Andrew Ng's Supervised Machine Learning: Regression and Classification Course at Coursera.<br>
 It'll be nice to understand this post if you know how to use numpy module in python and some mathmatical knowledge, but it's okay if not.

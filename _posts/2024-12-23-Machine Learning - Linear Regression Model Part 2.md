@@ -1,6 +1,6 @@
 ---
 classes: wide
-title: "(ENG) Machine Learning - Linear Regression Model Part II"
+title: "[INCOMPLETE] (ENG) Machine Learning - Linear Regression Model Part II"
 categories:
   - 머신러닝
 tags:
@@ -12,32 +12,30 @@ tags:
 ---
 
 Hello, my name is Yongkyun Yu.
-I'm Korean, and I'm not good at English.
-Therefore, I'm trying to improve my English skills by sharing some data science knowledge in English without translator.
-You'll learn some knowledge, and I'll learn some English skills.
-Quite cool, isn't it?
-Thank you for your understanding, I'll try my best.
+I'm Korean, and I'm not good at English, so I'm trying to improve my English skills by sharing some data science knowledge in English without translator.
+You'll learn some knowledge, and I'll learn some English skills. Quite cool, isn't it? Thank you for your understanding, I'll try my best.
 
 This post was written after attending Professor Andrew Ng's Supervised Machine Learning: Regression and Classification Course at Coursera.<br>
 It'll be nice to understand this post if you know how to use numpy module in python and some mathmatical knowledge, but it's okay if not.
 
 ---
 
-### 경사 하강법(Gradient Descent) - 소개
+### Gradient Descent - Introducing
 
-저번 글에서 우리는 `일변량 선형회귀 모델`과 간단한 배경지식들을 배웠다.
-기억이 나지 않는다면, 빠르게 돌아가 훑어보고 오자.
-대충 알고 있는 내용이라면 넘겨도 좋다.
+In last post, we learned some knowledges about `Univariate Linear Regression Model`.
+If you forgot, check the last post quickly.
 
-[머신러닝 - 선형회귀 모델 1 링크](https://baristayu.github.io/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/%ED%9A%8C%EA%B7%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80-%EB%AA%A8%EB%8D%B8-1/)
+[Machine Learning - Linear Regression Model Part I](https://baristayu.github.io/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D/%ED%9A%8C%EA%B7%80%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EC%84%A0%ED%98%95%ED%9A%8C%EA%B7%80-%EB%AA%A8%EB%8D%B8-1/)
 
-`비용 함수`에 대해 기억하는가? $\hat{y}$와 $y$의 차이를 나타내는 함수고, `parameter`는 $w,b$였다.
-`경사하강법`을 배우기 전에 먼저 비용함수의 그래프에 대해 보도록 하자.
+Do you remember about `Cost function`? It's a function that indicates difference between $\hat{y}$ and $y$, and its parameters were $w,b$.
+Before learning about `Gradient Descent`, let's check about the graph of `Cost function` below.
 
 ![image](https://github.com/user-attachments/assets/c783a325-6611-43ba-b7e1-a8ede07c06cf)
 
-일단 $b$는 잠시 잊고, 본 그래프는 $w$에 대한 $J(w)$의 그래프이다. $b$는 곧 이어서 다룰 예정이다.<br>
-그래프를 보면, `볼록(Convex)`한 모양을 하고 있는 것을 알 수 있다. $J(w)$가 낮을수록 예측값이 정확하므로, 볼록한 모양의 `꼭짓점`이 가장 정확한 예측값을 산출할 수 있어보인다. $a$에서 $w$가 높아지면 예측값이 정확할 것 같고, $b$에서 $w$가 낮아지면 예측값이 정확할 것 같다. <br> 그런데 무턱대고 $w$를 조절했다간, 그래프의 꼭짓점으로 다가가기 어려울 것 같다. 우리가 $w$를 임의로 더하고 빼는 것은 1차원적 접근이지만, 실제 $w$는 2차원 그래프에 있기 때문이다. 그러나 2차원적 접근이 어디 쉬운가? 숫자가 조금만 올라가도 차이는 기하급수적으로 날 것이다.<br> 우리는 `미세한 부분으로 나누어` 조금씩 $w$를 조절해야 한다.
+It's a graph of $J(w)$ with respect to $w$. Forget about $b$ for a while. I'll talk about later.
+Following the graph, its shape looks `Convex`. When $J(w)$ is low, it means predicted value is accurate, so `Vertex` of the graph is the most accurate value.
+
+$a$에서 $w$가 높아지면 예측값이 정확할 것 같고, $b$에서 $w$가 낮아지면 예측값이 정확할 것 같다. <br> 그런데 무턱대고 $w$를 조절했다간, 그래프의 꼭짓점으로 다가가기 어려울 것 같다. 우리가 $w$를 임의로 더하고 빼는 것은 1차원적 접근이지만, 실제 $w$는 2차원 그래프에 있기 때문이다. 그러나 2차원적 접근이 어디 쉬운가? 숫자가 조금만 올라가도 차이는 기하급수적으로 날 것이다.<br> 우리는 `미세한 부분으로 나누어` 조금씩 $w$를 조절해야 한다.
 여기서 저번 시간에 얘기했던 `미분`의 필요성이 나온다. 미세한 부분으로 나누어 조금씩 가다보면 $J(w)$의 값이 그래프의 `경사를 따라 내려갈` 것이다. 이것이 `경사하강법`이다.
 
 ---
